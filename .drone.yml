@@ -1,13 +1,5 @@
 pipeline:
   build:
-    image: golang
+    image: java:openjdk-8-alpine
     commands:
-      - go get
-      - go build
-      - go test
-
-services:
-  postgres:
-    image: postgres:9.4.5
-    environment:
-      - POSTGRES_USER=myapp
+      - ./mvnw clean build
