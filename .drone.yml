@@ -3,5 +3,6 @@ pipeline:
     image: maven
     pull: true
     commands:
-      - mvn clean package
-      
+      - Mvn clean package
+
+
