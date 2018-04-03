@@ -1,5 +1,7 @@
 pipeline:
   build:
-    image: java:openjdk-8-alpine
+    image: java:openjdk-7
+    environment: 
+      - MAVEN_HOME=~/.m2
     commands:
       - ./mvnw clean build
