@@ -4,3 +4,4 @@ pipeline:
     pull: true
     commands:
       - mvn clean package
+      
